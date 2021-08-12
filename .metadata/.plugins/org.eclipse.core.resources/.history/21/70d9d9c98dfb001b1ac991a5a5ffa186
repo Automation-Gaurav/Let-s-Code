@@ -1,0 +1,12 @@
+package PageObjects;
+
+import org.openqa.selenium.support.PageFactory;
+
+public class vGUI_Login {
+	
+	vGUI_Login()
+	{
+		PageFactory.initElements(driver, this);
+	}
+
+}

@@ -1,0 +1,16 @@
+
+
+import org.testng.annotations.Test;
+
+import PageObjects.vGUI_Login;
+
+public class TestCase1{
+	
+	@Test
+	public static void validate_Login()
+	{
+		vGUI_Login login=vGUI_Login.getvGUI_Login();	
+		login.loginToApp();
+	}
+
+}

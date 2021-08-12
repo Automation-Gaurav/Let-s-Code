@@ -1,0 +1,59 @@
+package Utility;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+
+
+public class TestBase {
+	
+	public static WebDriver driver;
+	public static Properties prop;
+	public static FileInputStream fis;
+	
+	public static String readProperty(String key) 
+	{
+		prop=new Properties();
+		try {
+			 fis=new FileInputStream("");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			prop.load(fis);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String value=prop.getProperty(key);
+		return value;
+	}
+	public static void inilizeBrowser()
+	{
+		if(readProperty("Browser").equalsIgnoreCase("firefox"))
+		{
+			System.setProperty("webdriver.gecko.driver", "");
+			driver=new FirefoxDriver();
+		}
+		
+		if(readProperty("Browser").equalsIgnoreCase("chrome"))
+		{
+			System.setProperty("webdriver.chrome.driver", "");
+			driver=new FirefoxDriver();
+		}
+		
+		if(readProperty("Browser").equalsIgnoreCase("ie"))
+		{
+			System.setProperty("webdriver.internetexplorer.driver", "");
+			driver=new FirefoxDriver();
+		}
+	}
+
+}

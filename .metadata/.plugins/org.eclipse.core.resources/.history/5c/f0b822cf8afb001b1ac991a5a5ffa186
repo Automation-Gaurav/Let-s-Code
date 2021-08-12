@@ -1,0 +1,36 @@
+package Utility;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+
+
+
+public class TestBase {
+	
+	public static WebDriver driver;
+	public static Properties prop;
+	public static FileInputStream fis;
+	
+	public static String readProperty(String key) 
+	{
+		prop=new Properties();
+		try {
+			 fis=new FileInputStream("");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		prop.load(fis);
+		String value=prop.getProperty(key);
+		return value;
+	}
+	public static void inilizeBrowser()
+	{
+		
+	}
+
+}

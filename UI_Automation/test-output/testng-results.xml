@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-12T22:45:14 IST" name="Default suite" finished-at="2021-08-12T22:45:43 IST" duration-ms="29144">
+    <groups>
+    </groups>
+    <test started-at="2021-08-12T22:45:14 IST" name="Default test" finished-at="2021-08-12T22:45:43 IST" duration-ms="29144">
+      <class name="TestCase1">
+        <test-method is-config="true" signature="inilizeBrowser()[pri:0, instance:TestCase1@193f604a]" started-at="2021-08-12T22:45:14 IST" name="inilizeBrowser" finished-at="2021-08-12T22:45:22 IST" duration-ms="8205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inilizeBrowser -->
+        <test-method signature="validate_Login()[pri:0, instance:TestCase1@193f604a]" started-at="2021-08-12T22:45:22 IST" name="validate_Login" finished-at="2021-08-12T22:45:43 IST" duration-ms="20893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_Login -->
+      </class> <!-- TestCase1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

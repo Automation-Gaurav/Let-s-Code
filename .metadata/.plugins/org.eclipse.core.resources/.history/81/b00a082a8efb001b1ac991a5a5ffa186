@@ -1,0 +1,11 @@
+import PageObjects.vGUI_Login;
+
+public class TestCase1 {
+	
+	
+	public static void validate_Login()
+	{
+		vGUI_Login login=vGUI_Login.getvGUI_Login();	
+	}
+
+}
